@@ -11,7 +11,7 @@ A brief description of what the project does.
 
 ## Installation
 
-1. Clone the repository:
+Clone the repository:
 
    ```bash
    git clone https://github.com/username/project.git
@@ -19,45 +19,44 @@ A brief description of what the project does.
    poetry install
    ```
 
-2. Usage:
+## Usage:
 
     ```bash
     poetry shell
     python app.py
     ```
-3. Contributing:
+## Contributing:
 
-Contributions are welcome! Please see the Contributing Guidelines.
+   Contributions are welcome! Please see the Contributing Guidelines.
 
-4. License:
+## License:
 
-This project is licensed under the MIT License.
+   This project is licensed under the MIT License.
 
 
 ### Python project checklist
 
-[x] 1. Source code in separate folder
-[x] 2. Tests code in test folder
-[X] 3. README file wich contains usefull information
-[ ] 4. Code documentation in docs folder
-[ ] 5. Makefile :
-    - for setup and activate env using poetry  
+- [X] Source code in separate folder  
+- [x] Tests code in test folder
+- [x] README file wich contains usefull information
+- [ ] Code documentation in docs folder
+- [ ] Makefile for more productive work:
+    - [x] Target for setup and activate env using poetry  
         - poetry env use python3.9  # creates venv
         - poetry shell  # activate venv
         - poetry add package_name  # adds dependency
         - poetry install  # install dependencies in venv
         - simply type exit or press Ctrl + D.  # deactivates venv
-
-
-    - install dependencies from requirements.txt
-    - run tests
-    - run coverage
-    - black - formating
-    - pylint code quality and error check
-    - Dockerfile to dockerize app
-    - Run docker container locally
-    - Push docker container
-    - create docs
-    - cleanup 
-[ ] 6. How to contribute md file
-[ ] 7. Automate tests and formarating, continerization and push
+    - [x] Target for running tests with pytest
+    - [x] Target for running test coverage with pytest
+    - [x] Target for code formating using black
+    - [x] Target for linting code with pylint to get code quality assesment and error check
+    - [ ] Target for building application from Dockerfile to containerize app
+    - [ ] Target for running container locally
+    - [ ] Traget for pushing container image to dockerhub
+    - [ ] Target for post deployment tests Push docker container
+    - [ ] Target for creating docs
+    - [x] Target for cleanup after tests
+- [ ] Contribute.md file for guidelines
+- [ ] Github actions automation to trigger tests and formarating, continerization and push on commit
+- [ ] Security to protect main branche that does not allow push to main branche without PR
