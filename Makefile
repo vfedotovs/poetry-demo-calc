@@ -3,6 +3,11 @@
 help:  ## 💬 This help message
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
 
+setup-venv: ## Setup virtual environment
+	poetry env use python3.9 && \
+	poetry shell && \
+	poetry install
+
 test: ##  Unit tests for app
 	pytest -vv
 
