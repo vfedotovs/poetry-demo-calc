@@ -2,8 +2,12 @@
 import argparse
 
 
-def add(x, y):
-    return x + y
+def add(x: int, y: int) -> int:
+    """ Adds two numbers """
+    if type(x) == int and type(y) == int:
+        return int(x + y)
+    else:
+        return x + y
 
 
 def subtract(x, y):
